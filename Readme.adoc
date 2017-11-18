@@ -1,0 +1,49 @@
+= Awesome PPAs
+:toc:
+:toc-placement: macro
+
+image:https://camo.githubusercontent.com/1997c7e760b163a61aba3a2c98f21be8c524be29/68747470733a2f2f617765736f6d652e72652f62616467652e737667[Awesome]
+
+toc::[]
+
+:summary:
+This repo is a list of awesome PPAs. `PPA` is an abbreviation meaning `Personal Package Archive`, it is a service using Canonical Launchpad platform, combining a version control system, continious integration and a `.deb` package archive. PPAs are widely used to share PRERELEASE, UNSTABLE or custom versions of software for \*buntu Linux-based operation systems because the devs can publish the packages based solely on their own decisions.
+
+* PPAs have identifiers in the format `ppa_owner's_launchpad_username/ppa_name`.
+* PPA's owner's page's URI is `https://launchpad.net/~ppa_owner's_launchpad_username`.
+* PPA's description page's URI is `https://launchpad.net/~ppa_owner's_launchpad_username/+archive/ubuntu/ppa_name`.
+* A PPA can be added into the system with a command `sudo add-apt-repository ppa: ppa_owner's_launchpad_username/ppa_name`. This adds the appropriate files into `/etc/apt/sources.list.d` and the appropriate keys public into trusted by `apt`.
+* A ppa can be removed from the system (restoring the packets versions to the ones available in other repos) with the command `sudo ppa-purge ppa:ppa_owner's_launchpad_username/ppa_name`.
+
+Of course, everything can also be done manually.
+
+= Legend
+🌫 - There is no strong evidence that the owners of the ppa are officially the ones who distribute the builds of the project. I mean that anyone can create a PPA and build and distribute software. Being an official PPA of a project means that the project holds some liability for the PPA owner actions (even if it doesn't hold legal liability, there are some reputation spoiling risks) and is meant to use only trustworthy people for that. But for ppas by unknown people this is no true. We don't know that people, we are not sure that they worth truth. So it may be more dangerous to use this PPA.
+
+= PPA list
+== Drivers
+* https://www.mesa3d.org/[Mesa], GPU drivers, https://www.khronos.org/opencl/[OpenCL] (including https://cgit.freedesktop.org/mesa/mesa/tree/src/gallium/state_trackers/clover[Gallium Clover]), https://www.khronos.org/opencl/[Vulkan], https://cgit.freedesktop.org/mesa/mesa/tree/src/gallium/state_trackers/nine[Gallium Nine] (a free open-source https://msdn.microsoft.com/en-us/library/windows/desktop/ee663274.aspx[DirectX] 9 implementation), https://cgit.freedesktop.org/mesa/mesa/tree/src/gallium/state_trackers/vdpau[Gallium VDPAU] (GPU video decoding and presentation API)
+** 🌫 paulo-miguel-dias/mesa
+** 🌫 oibaf/graphics-drivers
+* commendsarnex/winedri3 - https://www.winehq.org/[Wine] with Gallium Nine support.
+
+== Software
+* 🌫 otto-kesselgulasch/gimp - GIMP
+* kritalime/ppa - https://krita.org/en/download/krita-desktop/[Krita Lime]
+* audacity-team/daily - https://www.audacityteam.org/download/linux/[Audacity]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
